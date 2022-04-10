@@ -3,3 +3,4 @@ brasno x 4
 pavlaka x 3
 kaskaval x 7
 cokolado x 2
+vino x 1

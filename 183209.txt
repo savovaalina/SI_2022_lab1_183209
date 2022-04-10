@@ -1,0 +1,224 @@
+https://github.com/savovaalina/SI_2022_lab1_183209
+
+1.Успешно инсталиран Git и краиран профил на Github
+2.На дадениот линк во лабораториската вежба го променив името на главната гранка во master.
+3.Креирав репозиториум и го именував SI_2022_lab1_183209, го ставив истиот да биде приватен. Ја избрав опцијата Add a README file
+ и во него го наведов моето име, презиме и индекс Алина Савова 183209.
+4. git clone https://github.com/savovaalina/SI_2022_lab1_183209.git - со оваа команда репозиториумот што го креирав на мојот профил
+ се клонира локално на мојот компјутер. 
+ cd SI_2022_lab1_183209 - додека со оваа команда влегуваме во фолдерот со цел да се извршат следните задачи.
+5. git add --all 
+   git commit -m "Add 5 items to the shopping list" со оваа команда се прави commit
+   
+6.git add --all 
+   git commit -m "Add quantities to the items" со оваа команда се прави commit
+  
+7. git checkout -b branch1 
+   git checkout -b branch2 
+   git checkout master 
+  
+Објаснување- со git branch се креира нова гранка без да се префрлиме на таа што ја креираме , а git checkout служи за да се 
+  префрлиш на друга гранка . Ако таа гранка не постои се додава -b за да се креира.
+
+8.git log - komanda
+Izlez:
+
+commit e8ce4ec14e34ead18383f155894e4a96daccf244 (HEAD -> master, branch2, branch1)
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:23:42 2022 +0200
+
+    Add quantities to the items
+
+commit d5aec3626e0cd4a14ce31878bf5b48d5a18b66c6
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:22:04 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit e4571c5a16db4e23e44db60cdb1604ea90b2bac7 (origin/master, origin/HEAD)
+Author: savovaalina <102924030+savovaalina@users.noreply.github.com>
+Date:   Sun Apr 10 15:18:41 2022 +0200
+
+    Update README.md
+
+commit febd28ed95da8c986ca093f3e8df4cc9bf32be9f
+Author: savovaalina <102924030+savovaalina@users.noreply.github.com>
+Date:   Sun Apr 10 15:16:04 2022 +0200
+
+:...skipping...
+commit e8ce4ec14e34ead18383f155894e4a96daccf244 (HEAD -> master, branch2, branch1)
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:23:42 2022 +0200
+
+    Add quantities to the items
+
+commit d5aec3626e0cd4a14ce31878bf5b48d5a18b66c6
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:22:04 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit e4571c5a16db4e23e44db60cdb1604ea90b2bac7 (origin/master, origin/HEAD)
+Author: savovaalina <102924030+savovaalina@users.noreply.github.com>
+Date:   Sun Apr 10 15:18:41 2022 +0200
+
+    Update README.md
+
+commit febd28ed95da8c986ca093f3e8df4cc9bf32be9f
+Author: savovaalina <102924030+savovaalina@users.noreply.github.com>
+Date:   Sun Apr 10 15:16:04 2022 +0200
+
+    Initial commit
+
+
+9. git push --all origin - со оваа команда се синхронизира remote репозиториум со локалниот репозиториум
+
+10.git checkout branch1 - се префрламе на гранката branch1
+
+11.git add --all 
+   git commit -m "Change quantity of item #5" - ја менуваме 5 тата ставка и правиме commit со оваа порака "Change quantity of item #5"
+
+12.  git checkout master - се вракаме на гранката muster
+
+13. git add --all 
+   git commit -m "“Change quantity of item #2" ја менуваме 2 тата ставка и правиме commit со оваа порака "Change quantity of item #2"
+   
+14. git push --all origin - со оваа команда синхронизираме 
+15. git checkout branch2 - се префрламе на гранката branch2
+16.git add --all 
+   git commit -m “Modify item #4” - Го променив името на стваката број 4.
+
+ 17.git log - komanda
+Izlez:
+commit b98ec2f603f38393a50a566a431923f02e500940 (HEAD -> branch2)
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:50:11 2022 +0200
+
+    Modify item #4
+
+commit e8ce4ec14e34ead18383f155894e4a96daccf244 (origin/branch2)
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:23:42 2022 +0200
+
+    Add quantities to the items
+
+commit d5aec3626e0cd4a14ce31878bf5b48d5a18b66c6
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:22:04 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit e4571c5a16db4e23e44db60cdb1604ea90b2bac7
+Author: savovaalina <102924030+savovaalina@users.noreply.github.com>
+Date:   Sun Apr 10 15:18:41 2022 +0200
+
+    Update README.md
+:...skipping...
+commit b98ec2f603f38393a50a566a431923f02e500940 (HEAD -> branch2)
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:50:11 2022 +0200
+
+    Modify item #4
+
+commit e8ce4ec14e34ead18383f155894e4a96daccf244 (origin/branch2)
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:23:42 2022 +0200
+
+    Add quantities to the items
+
+commit d5aec3626e0cd4a14ce31878bf5b48d5a18b66c6
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:22:04 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit e4571c5a16db4e23e44db60cdb1604ea90b2bac7
+Author: savovaalina <102924030+savovaalina@users.noreply.github.com>
+Date:   Sun Apr 10 15:18:41 2022 +0200
+
+    Update README.md
+
+commit febd28ed95da8c986ca093f3e8df4cc9bf32be9f
+Author: savovaalina <102924030+savovaalina@users.noreply.github.com>
+Date:   Sun Apr 10 15:16:04 2022 +0200
+
+    Initial commit
+
+
+18. git add --all 
+   git commit -m "Modify item #4 and add item #6" Додадов 6 та ставка.
+19. git log - komanda
+Izlez:
+commit 819c86990a3323f9920d615a91e7b1e2121b116d (HEAD -> branch2)
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 16:05:55 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit b98ec2f603f38393a50a566a431923f02e500940
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:50:11 2022 +0200
+
+    Modify item #4
+
+commit e8ce4ec14e34ead18383f155894e4a96daccf244 (origin/branch2)
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:23:42 2022 +0200
+
+    Add quantities to the items
+
+commit d5aec3626e0cd4a14ce31878bf5b48d5a18b66c6
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:22:04 2022 +0200
+
+    Add 5 items to the shopping list
+:...skipping...
+commit 819c86990a3323f9920d615a91e7b1e2121b116d (HEAD -> branch2)
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 16:05:55 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit b98ec2f603f38393a50a566a431923f02e500940
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:50:11 2022 +0200
+
+    Modify item #4
+
+commit e8ce4ec14e34ead18383f155894e4a96daccf244 (origin/branch2)
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:23:42 2022 +0200
+
+    Add quantities to the items
+
+commit d5aec3626e0cd4a14ce31878bf5b48d5a18b66c6
+Author: Your Name <you@example.com>
+Date:   Sun Apr 10 15:22:04 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit e4571c5a16db4e23e44db60cdb1604ea90b2bac7
+Author: savovaalina <102924030+savovaalina@users.noreply.github.com>
+Date:   Sun Apr 10 15:18:41 2022 +0200
+
+    Update README.md
+
+commit febd28ed95da8c986ca093f3e8df4cc9bf32be9f
+Author: savovaalina <102924030+savovaalina@users.noreply.github.com>
+Date:   Sun Apr 10 15:16:04 2022 +0200
+
+    Initial commit
+
+20.git checkout master
+ git merge branch1 со оваа команда се спојува гранката branch1 кон master
+
+21.git merge branch2 со оваа команда се спојува гранката branch2 кон master
+ 
+
+Објаснуванје за 20,21 чекор.
+
+-При извршување на наредбата се случија конфликти, не го решив конфликтот. 
+Пробав и со git push и git merge --abort. Но, не сакаше.
+
+22.git commit -m "Add docs"
+23.git push --all origin

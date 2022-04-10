@@ -1,5 +1,5 @@
 leb x 1
 brasno x 4
 pavlaka x 3
-sirenje x 7
+kaskaval x 7
 cokolado x 2
